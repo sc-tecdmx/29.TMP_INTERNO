@@ -6,12 +6,9 @@ public class DTOResponseEmpleado {
 	String nombre;
 	String apellido1;
 	String apellido2;
-	String area;
-	String puesto;
+	List<PerfilDTO> perfiles;
 	String correo;
-	String unidadAdscripcion;
 	String pathFotografia;
-	
 	public String getNombre() {
 		return nombre;
 	}
@@ -30,17 +27,11 @@ public class DTOResponseEmpleado {
 	public void setApellido2(String apellido2) {
 		this.apellido2 = apellido2;
 	}
-	public String getArea() {
-		return area;
+	public List<PerfilDTO> getPerfiles() {
+		return perfiles;
 	}
-	public void setArea(String area) {
-		this.area = area;
-	}
-	public String getPuesto() {
-		return puesto;
-	}
-	public void setPuesto(String puesto) {
-		this.puesto = puesto;
+	public void setPerfiles(List<PerfilDTO> perfiles) {
+		this.perfiles = perfiles;
 	}
 	public String getCorreo() {
 		return correo;
@@ -48,18 +39,12 @@ public class DTOResponseEmpleado {
 	public void setCorreo(String correo) {
 		this.correo = correo;
 	}
-	public String getUnidadAdscripcion() {
-		return unidadAdscripcion;
-	}
-	public void setUnidadAdscripcion(String unidadAdscripcion) {
-		this.unidadAdscripcion = unidadAdscripcion;
-	}
 	public String getPathFotografia() {
 		return pathFotografia;
 	}
 	public void setPathFotografia(String pathFotografia) {
 		this.pathFotografia = pathFotografia;
 	}
-
+	
 	
 }
