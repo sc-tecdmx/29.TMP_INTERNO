@@ -22,7 +22,6 @@ public class InstEmpleadoPuestoArea {
 	@Column(name = "n_id_empleado_puesto_area", unique = true, nullable = false)
 	int  id;
   
-
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="n_id_num_empleado", referencedColumnName="n_id_num_empleado") 
 	InstEmpleado  idNumEmpleado;

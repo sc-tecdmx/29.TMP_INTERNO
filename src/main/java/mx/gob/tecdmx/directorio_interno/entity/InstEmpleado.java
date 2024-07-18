@@ -54,7 +54,7 @@ public class InstEmpleado {
 	String  pathFotografia;
   
 	@Column(name="n_id_usuario") 
-	int idUsuario;
+	Integer idUsuario;
 
 
 	public int getId() {
@@ -153,14 +153,6 @@ public class InstEmpleado {
 		this.pathFotografia = pathFotografia;
 	}
 
-	public int getIdUsuario() {
-		return idUsuario;
-	}
-
-	public void setIdUsuario(int idUsuario) {
-		this.idUsuario = idUsuario;
-	}
-
 	public boolean isActivo() {
 		return activo;
 	}
@@ -168,5 +160,14 @@ public class InstEmpleado {
 	public void setActivo(boolean activo) {
 		this.activo = activo;
 	}
+
+	public Integer getIdUsuario() {
+		return idUsuario;
+	}
+
+	public void setIdUsuario(Integer idUsuario) {
+		this.idUsuario = idUsuario;
+	}
+	
 	
 }

@@ -29,7 +29,7 @@ public class InstLogEmpleado {
 	String  bitacora;
   
 	@Column(name="n_session_id") 
-	int sessionId;
+	Integer sessionId;
 
 	public int getId() {
 		return id;
@@ -55,13 +55,14 @@ public class InstLogEmpleado {
 		this.bitacora = bitacora;
 	}
 
-	public int getSessionId() {
+	public Integer getSessionId() {
 		return sessionId;
 	}
 
-	public void setSessionId(int sessionId) {
+	public void setSessionId(Integer sessionId) {
 		this.sessionId = sessionId;
 	}
+
 	
 	
 }
